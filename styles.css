@@ -1,3 +1,5 @@
+/* Base Styles */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -9,33 +11,36 @@ body {
     padding: 3.75rem;
 }
 
+/* Header */
+
 header {
-    display: grid;
+    display: flex;
     gap: 1.625rem;
-    grid-template-columns: repeat(4, 1fr);
 }
+
+/* Header - Image */
 
 .profile-picture {
-    grid-column: span 1;
-    border-radius: 1.5rem;
     width: 18.75rem;
     height: 18.75rem;
+    border-radius: 1.5rem;
 }
 
+/* Header - Profile Section */
+
 .profile-section {
-    grid-column: span 3;
     background-color: #FFFFFF;
+    color: #000;
+    font-family: "Inter", sans-serif;
     padding: 3.75rem 4.375rem;
     border-radius: 0.75rem;
-    box-shadow: 3px 3px 3px #DADADA;
     height: 18.75rem;
-    font-family: "Inter", sans-serif;
+    box-shadow: 3px 3px 3px #DADADA;
 }
 
 .full-name {
-    font-weight: bold;
     font-size: 1.375rem;
-    color: #000;
+    font-weight: bold;
     text-align: left;
     margin-bottom: 1rem;  
 }
