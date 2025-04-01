@@ -20,7 +20,7 @@ header {
 }
 
 .profile-picture {
-    width: 300px;
+    max-width: 300px;
     height: 300px;
     border-radius: 1.5rem;
 }
@@ -31,6 +31,7 @@ header {
     background-color: #FFFFFF;
     margin-left: 1.625rem;
     box-shadow: 3px 3px 3px #DADADA;
+    max-width: 62.125rem;
 }
 
 .full-name {
@@ -47,7 +48,134 @@ header {
     color: #4A4A4A;
 }
 
+/* Top Main */
+
+.top-main {
+    display: flex;
+    gap: 3rem;
+}
+
+.proficiency-section h2,
+.skills-section h2,
+.projects-section h2 {
+    font-weight: 500;
+    font-size: 2.125rem;
+}
+
+.proficiency-section,
+.skills-section,
+.projects-section {
+    background-color: #FFFFFF;
+    border-radius: 0.75rem;
+    padding: 3.25rem 1.75rem;
+    box-shadow: 3px 3px 3px #DADADA;
+}
+
+.proficiency-section {
+    width: 35.25rem;
+}
+
+.skills-section {
+    width: 44.125rem;
+}
+
+.projects-section {
+    margin-top: 3rem;
+    width: 77.25rem;
+}
+
 /* Proficiency */
+
+.proficiency-levels {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1.875rem 0;
+}
+
+.proficiency-levels p:nth-child(2) {
+    margin: 0 0.75rem;
+}
+
+.proficiency-languages {
+    display: flex;
+    gap: 2rem;
+}
+
+.proficiency-name p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.proficiency-name p:nth-child(2) {
+    margin: 1rem 0;
+}
+
+.proficiency-name p:nth-child(3) {
+    margin-bottom: 1rem;
+}
+
+.proficiency-bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.proficiency-bars div {
+    background-color: #4A8B70;
+    height: 1.625rem;
+    border-radius: 0.5rem;
+}
+
+.proficiency-bars div:nth-child(1) {
+    width: 75%;
+}
+
+.proficiency-bars div:nth-child(2) {
+    width: 25%;
+}
+
+.proficiency-bars div:nth-child(3) {
+    width: 50%;
+}
+
+.proficiency-bars div:nth-child(4) {
+    width: 100%;
+}
 
 /* Skills */
 
+.skill-tags {
+    margin-top: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 15.25rem;
+    width: auto;
+}
+
+.skill-tags span {
+    background-color: #ECF4F1;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.6875rem;
+    border-radius: 6rem;
+    margin-right: 1.25rem;
+    white-space: nowrap;
+}
+
+/* Projects */
+
+.projects-section h2 {
+    text-align: center;
+}
+
+.project-article {
+    background-color: #4A8B70;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
