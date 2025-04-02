@@ -6,11 +6,6 @@
     margin: 0;
 }
 
-
-/*  
-
-*/
-
 /* Custom colors */
 
 :root {
@@ -30,12 +25,9 @@ body {
     align-items: center;
     flex-direction: column;
     gap: 3rem;
-    background-image: url(./images/background.png);
-    background-position: center;
-    background-size: cover;
+    background-color: var(--cloud-gray);
     padding: 4rem 3.5rem;
     font-family: "Poppins", sans-serif;
-    width: 100%;
 }
 
 /* Sections Overview */
@@ -49,7 +41,7 @@ body {
 
 .section-heading {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw ,2rem);
 }
 
 /* - - - - - - - HEADER - - - - - - -  */
@@ -62,8 +54,10 @@ header {
 /* Profile - - -  Left - - - */
 
 .profile-picture {
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 25vw;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 1.5rem;
 }
 
@@ -77,14 +71,14 @@ header {
 }
 
 .full-name {
-    font-size: 2.25rem;
+    font-size: clamp(1rem, 3vw, 2.25rem);
     color: var(--black);
     font-weight: 600;
     margin-bottom: 0.75rem;
 }
 
 .bio-text {
-    font-size: 1.375rem;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
     font-weight: 400;
     line-height: 1.5;
     color: var(--slate-gray);
@@ -96,6 +90,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    width: 100%;
 }
 
 .top-main {
@@ -117,7 +112,7 @@ main {
 .proficiency-levels {
     display: flex;
     gap: 0.75rem;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
     font-weight: 500;
 }
 
@@ -140,6 +135,7 @@ main {
 
 .proficiency-name p {
     font-size: 1.5rem;
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
     font-weight: 500;
     white-space: nowrap;
 }
@@ -156,6 +152,7 @@ main {
 .proficiency-bars div {
     background-color: var(--minty-green);
     height: 1.625rem;
+    height: clamp(1.125rem, 2vw ,1.625rem);
     border-radius: 0.5rem;
 }
 
@@ -196,7 +193,7 @@ main {
     font-size: 1.5rem;
     padding: 0.5rem 0.75rem;
     border-radius: 6rem;
-    margin-right: 1.25rem;
+    margin-right: 2rem;
     white-space: nowrap;
 }
 
@@ -237,7 +234,7 @@ main {
 }
 
 .top-article p {
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 2vw ,1.5rem);
     font-weight: 500;
 }
 
@@ -250,12 +247,12 @@ main {
 
 .project-article h3 {
     margin: 1.5rem 0;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 2vw ,1.5rem);
     font-weight: 500;
 }
 
 .project-content {
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 1.75vw ,1.25rem);
     font-weight: 400;
 }
 
@@ -309,7 +306,7 @@ main {
     flex-direction: column;
     gap: 2px;
     grid-column: span 1;
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
 }
 
 .edu-time-period {
@@ -318,7 +315,7 @@ main {
 
 .edu-institution {
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 3vw, 1.5rem);
 }
 
 .edu-qualification {
@@ -329,7 +326,7 @@ main {
 
 .education-detail {
     grid-column: span 2;
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
 }
 
 /* Tools */
@@ -340,6 +337,14 @@ main {
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    border: 2px red solid;
+}
+
+.list-tools {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .tools-headings {
@@ -363,6 +368,8 @@ main {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.75rem;
     border-radius: 1rem;
+    width: 100%;
+    max-width: 100%;
 }
 
 .icons {
@@ -394,29 +401,29 @@ main {
 }
 
 .experience-date {
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
     font-weight: 500;
 }
 
 .experience-name {
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
     font-weight: 500;
 }
 
 .experience-company-and-length {
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 1.5vw, 1.25rem);
     font-weight: 400;
 }
 
 .experience-detail {
-    font-size: 1.25rem;
+    font-size: clamp(0.75rem, 2vw, 1.25rem);
     font-weight: 400;
 }
 
 .recent-experience > p {
     background-color: var(--orange);
     margin-left: 2.5rem;
-    font-size: 0.875rem;
+    font-size: clamp(0.75rem, 1.5vw, 1.75rem);
     white-space: nowrap;
     padding: 0.25rem 1rem;
     border-radius: 8.875rem;
@@ -433,6 +440,7 @@ main {
 
 .footer-section > h2 {
     font-size: 2.125rem;
+    font-size: clamp(0.875rem, 2vw, 2.125rem);
     font-weight: 500;
 }
 
@@ -446,5 +454,205 @@ main {
     display: flex;
     gap: 0.75rem;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+}
+
+/* - - - Media Quires - - - */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    body {
+        padding: 3rem 2.5rem;
+        gap: 2rem;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .profile-section {
+        padding: 2rem 3rem;
+    }
+    .top-main,
+    .middle-main {
+        flex-direction: column;
+    }
+    header {
+        gap: 1.25rem;
+    }
+    .top-main,
+    .main {
+        gap: 2rem;
+    }
+    .profile-picture {
+        width: 35vw;
+        height: 35vw;
+    }
+    .section {
+        padding: 2.75rem 1.25rem;
+    }
+    .proficiency-section {
+        gap: 1.5rem;
+    }
+    .proficiency-languages {
+        gap: 0.75rem;
+    }
+    .proficiency-name,
+    .proficiency-bars {
+        gap: 0.75rem;
+    }
+    .skill-tags {
+        margin-top: 2rem;
+    }
+    .skill-tags span {
+        font-size: 1.5rem;
+        margin-right: 2.125rem;
+        padding: 0.25rem 0.5rem;
+    }
+    .projects {
+        margin-top: 1.5rem;
+    }
+    .heart-icon {
+        width: 1.5rem;
+        height: 1.25rem;
+    }
+    .project-article h3 {
+        margin: 1rem 0;
+    }
+    .project-content p:nth-child(2) {
+        margin: 1rem 0;
+    }
+    .education-section {
+        margin-bottom: 1rem;
+    }
+    .experience-section {
+        gap: 1.75rem;
+    }
+    .education-section {
+        gap: 1rem;
+    }
+    .education-article {
+        padding: 1.75rem;
+        gap: 1.5rem;
+    }
+    .education-summary {
+        gap: 1.5px;
+    }
+    .list-tools {
+        display: flex;
+        gap: 1.5rem;
+        flex-direction: row;
+    }
+    .experience-section {
+        gap: 1.5rem;
+    }
+    .experience-block {
+        gap: 2rem;
+        padding: 1.25rem 1rem;
+    }
+    .recent-experience > p {
+        margin-left: 2rem;
+        padding: 0.25rem 0.75rem;
+    }
+    .footer-section {
+        padding: 1.75rem;
+    }    
+    .footer-details {
+        gap: 0.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 2rem 1.5rem;
+        gap: 1rem;
+    }
+    .profile-section {
+        padding: 0.5rem 1.5rem;
+    }
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .top-main,
+    .middle-main {
+        flex-direction: column;
+    }
+    header {
+        gap: 0.75rem;
+    }
+    .top-main,
+    .main {
+        gap: 1rem;
+    }
+    .profile-picture {
+        width: 40vw;
+        height: 40vw;
+    }
+    .section {
+        padding: 1.5rem 0.75rem;
+    }
+    .proficiency-section {
+        gap: 1rem;
+    }
+    .proficiency-languages {
+        gap: 0.5rem;
+    }
+    .proficiency-name,
+    .proficiency-bars {
+        gap: 0.5rem;
+    }
+    .skill-tags {
+        margin-top: 2rem;
+    }
+    .skill-tags span {
+        font-size: 1.25rem;
+        margin-right: 1.25rem;
+        padding: 0.125rem 0.25rem;
+    }
+    .projects {
+        margin-top: 1rem;
+    }
+    .heart-icon {
+        width: 1.375rem;
+        height: 1.125rem;
+    }
+    .project-article h3 {
+        margin: 0.5rem 0;
+    }
+    .project-content p:nth-child(2) {
+        margin: 0.5rem 0;
+    }
+    .education-section {
+        margin-bottom: 1rem;
+    }
+    .education-section {
+        gap: 0.75rem;
+    }
+    .education-article {
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+    .education-summary {
+        gap: 1px;
+    }
+    .list-tools {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        margin: 0;
+    }
+    .experience-section {
+        gap: 1.25rem;
+    }
+    .experience-block {
+        gap: 1.5rem;
+        padding: 1rem 0.75rem;
+    }
+    .recent-experience > p {
+        margin-left: 1rem;
+        padding: 0.25rem 0.5rem;
+    }
+    .footer-section {
+        padding: 1.25rem;
+    }
+    .footer-details {
+        gap: 0.25rem;
+    }
 }
