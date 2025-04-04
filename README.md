@@ -4,7 +4,7 @@
 
 ## Description
 
-This project is a personal website built using HTML and CSS. I used a Figma design file as a reference, to create a fully responsive site that displays my skills. This project helped me practice vital fundamental web development skills and gain confidence for my future portfolio.
+This project is a personal website built using HTML and CSS. I used a Figma design file as a reference, to creating a fully responsive site that displays my skills. This project helped me practice vital fundamental web development skills and gain confidence for my future portfolio.
 
 ## Project Overview
 
