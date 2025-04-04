@@ -17,11 +17,11 @@
 
     /* Custom fonts */
 
-    --extra-small-font: 1vw;
-    --small-font: 1.25vw;
-    --medium-font: 1.5vw;
-    --large-font: 1.75vw;
-    --extra-large-font: 2.5vw;
+    --extra-small-font: 0.75rem;
+    --small-font: 1rem;
+    --medium-font: 1.25rem;
+    --large-font: 1.5rem;
+    --extra-large-font: 2rem;
 
     /* Custom gaps */
 
@@ -141,7 +141,6 @@ header {
 .proficiency-section {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: var(--medium-gap);
 }
 
@@ -495,7 +494,42 @@ header {
 
 /* Media Quires */
 
+@media (max-width: 640px) {
+    :root {
+        --extra-small-font: 0.375rem;
+        --small-font: 0.5rem;
+        --medium-font: 0.625rem;
+        --large-font: 0.75rem;
+        --extra-large-font: 1rem;
+    }
+    .footer-section > h2 {
+        font-size: var(--medium-font);
+    }
+    .footer-details {
+        gap: var(--small-gap);
+        font-size: var(--extra-small-font);
+    }
+}
+
 @media (max-width: 768px) {
+    :root {
+        --extra-small-font: 0.5625rem;
+        --small-font: 0.75rem;
+        --medium-font: 0.9375rem;
+        --large-font: 1.125rem;
+        --extra-large-font: 1.5rem;
+
+        --small-gap: 0.5vw;
+        --medium-gap: 1.25vw;
+        --large-gap: 1.75vw;
+
+        --medium-padding: 1.3125vw 1.125vw;
+        --large-padding: 2.4375vw 2.0625vw;
+        --extra-large-padding: 3.375vw 3vw;
+    }
+    .section-heading {
+        font-size: var(--large-font);
+    }
     .top-main {
         flex-direction: column;
     }
@@ -507,10 +541,10 @@ header {
         width: 50%;
     }
     .full-name {
-        font-size: 2.75vw;
+        font-size: var(--large-font);
     }
     .bio-text {
-        font-size: 2.25vw;
+        font-size: var(--small-font);
     }
     .proficiency-levels {
         gap: var(--large-gap);
@@ -524,14 +558,28 @@ header {
     .proficiency-bars div {
         border-radius: 0.25rem
     }
+    .proficiency-levels {
+        font-size: var(--medium-font);
+    }
+    
+    .proficiency-name p {
+        font-size: var(--medium-font);
+    }
     .skills-section {
         gap: var(--medium-gap);
+    }
+    .skill-tags span {
+        font-size: var(--medium-font);
     }
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
     .project-article h3 {
         margin: 1vw 0;
+        font-size: var(--medium-font);
+    }
+    .project-article {
+        padding: var(--large-padding);
     }
     .middle-main {
         flex-direction: column;
@@ -551,6 +599,7 @@ header {
     .design-icons,
     .tools-icons {
         height: 100%;
+        padding: var(--extra-large-padding);
     }
     .tools-headings {
         align-self: center;
@@ -559,7 +608,7 @@ header {
         padding: var(--large-padding);
     }
     .footer-details a:hover {
-        transform: scale(1.05);
+        transform: scale(1.025);
     }
     .desktop-education,
     .desktop-experience {
@@ -589,9 +638,33 @@ header {
         justify-content: space-between;
         width: 100%;
     }
+    .experience-name {
+        font-size: var(--small-font);
+    }
     .education-bottom-mobile,
     .experience-mobile-bottom {
         display: flex;
         gap: var(--large-gap);
+    }    
+    .edu-institution {
+        font-size: var(--small-font);
     }
+    .education-article {
+        gap: 4vw;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    :root {
+        --extra-small-font: 0.5625rem;
+        --small-font: 0.75rem;
+        --medium-font: 0.9375rem;
+        --large-font: 1.125rem;
+        --extra-large-font: 1.5rem;
+
+        --small-gap: 0.75vw;
+        --medium-gap: 1.875vw;
+        --large-gap: 2.625vw;
+    }
+    
 }
