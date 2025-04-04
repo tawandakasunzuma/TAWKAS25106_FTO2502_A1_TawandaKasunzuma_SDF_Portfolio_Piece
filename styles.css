@@ -478,12 +478,12 @@ header {
     color: var(--white);
     text-decoration: none;
     cursor: pointer;
-    transition: all 600ms ease;
+    transition: all 500ms ease;
 }
 
 .footer-details a:hover {
-    transform: translateY(-4px);
-    color: var(--cloud-gray);
+    transform: scale(1.05);
+    color: var(--black);
 }
 
 .footer-details {
@@ -559,7 +559,7 @@ header {
         padding: var(--large-padding);
     }
     .footer-details a:hover {
-        transform: translateY(-2px);
+        transform: scale(1.05);
     }
     .desktop-education,
     .desktop-experience {
