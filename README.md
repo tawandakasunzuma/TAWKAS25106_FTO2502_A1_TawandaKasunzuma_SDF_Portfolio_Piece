@@ -11,7 +11,7 @@ This project is a personal website built using HTML and CSS. I used a Figma desi
 **Project Name**: Resume Project
 **Goal**: Replicate a Figma design of a resume site as accurately as possible using HTML and CSS
 **Tools Used**: HTML5, CSS3, Git, GitHub
-**Deployment**: Not required - site must run locally in the browser
+**Deployment**: [Live Demo on Netlify](https://tawanda-kanban-task-manager.netlify.app/)
 
 ## Table of Contents
 
