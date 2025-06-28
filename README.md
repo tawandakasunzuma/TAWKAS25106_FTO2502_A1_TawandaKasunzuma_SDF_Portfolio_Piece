@@ -14,7 +14,8 @@ This project is a personal website built using HTML and CSS. I used a Figma desi
 
 **Tools Used**: HTML5, CSS3, Git, GitHub
 
-**Deployment**: [Live Demo on Netlify](https://tawanda-kanban-task-manager.netlify.app/)
+**Deployment**: [Live Demo on Netlify](https://sdf-portfolio-demo.netlify.app/)
+
 
 ## Table of Contents
 
